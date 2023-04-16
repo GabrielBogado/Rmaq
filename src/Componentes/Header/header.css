@@ -1,0 +1,58 @@
+header{
+    height: 15vh;
+    width: 100%;
+    display: flex; 
+    justify-content: space-between;
+    background: rgb(14, 159, 249);
+}
+.imgLogo{
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+a:hover{
+    color: black;
+    transition: 0.5s;
+}
+
+.pngOpen{
+    display: none;
+}
+.menuNav{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@media (max-width: 800px) {
+    
+    .menuNav{
+        display: none;
+    }
+
+    .active{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pngOpen{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .menuImg{
+        width: 3rem;
+        height: 3rem;
+        cursor: pointer;
+    }
+    
+    
+}
